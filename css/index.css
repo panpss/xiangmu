@@ -1,0 +1,369 @@
+/* 初始化样式导入 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+}
+input {
+  border: none;
+  outline: none;
+}
+img {
+  /* 为了出去图片底部默认的3像素的间距 */
+  display: block;
+  width: 100%;
+}
+.clearfix::after {
+  display: block;
+  content: '.';
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+/* 京东文本主色调 */
+.font_col {
+  color: #c91523 !important;
+}
+body {
+  background-color: #f5f5f5;
+}
+/* index页面的样式 */
+.view {
+  color: #666;
+  font-size: 14px;
+  /* 头部工具栏 */
+  /* 轮播图 */
+  /* 京东导航部分 */
+  /*  京东掌上秒杀*/
+  /* 618狂撒神劵部分 */
+  /*  618活动产品展示部分 */
+  /* 广告部分 */
+  /* 特色超市部分 */
+  /* 主题街部分 */
+  /* 品牌推荐部分 */
+  /* 猜你喜欢部分 */
+  /* 底部部分 */
+}
+.view .top_bar {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background: #c91523;
+  display: flex;
+  z-index: 10;
+}
+.view .top_bar .logo {
+  width: 70px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view .top_bar .logo h1 {
+  display: flex;
+}
+.view .top_bar .logo h1 a {
+  display: block;
+  width: 56px;
+  height: 20px;
+  font-size: 0;
+  background-image: url('../images/jd-sprites.png');
+  background-repeat: no-repeat;
+  background-position: 0 -110px;
+  background-size: 200px 200px;
+}
+.view .top_bar .search {
+  flex: 1;
+  padding: 5px 0;
+  position: relative;
+}
+.view .top_bar .search input {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  text-indent: 25px;
+}
+.view .top_bar .search::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/jd-sprites.png');
+  background-repeat: no-repeat;
+  background-position: -60px -110px;
+  background-size: 200px 200px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+.view .top_bar .login {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+.view .jd_nav {
+  background: #fff;
+}
+.view .jd_nav a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 5px;
+}
+.view .jd_nav a img {
+  width: 50%;
+  margin: 0 auto;
+}
+.view .hand_kill {
+  background: #fff;
+  margin-top: 10px;
+}
+.view .hand_kill .kill_title {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+.view .hand_kill .kill_title .kill_time {
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+.view .hand_kill .kill_title .kill_time .clock {
+  width: 18px;
+  height: 22px;
+  background-image: url('../images/jd-sprites.png');
+  background-repeat: no-repeat;
+  background-position: -85px -110px;
+  background-size: 200px 200px;
+}
+.view .hand_kill .kill_title .kill_time h5 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 15px;
+}
+.view .hand_kill .kill_title .kill_time .time span {
+  background: #000;
+  color: #fff;
+  padding: 0 3px;
+}
+.view .hand_kill .kill_title .kill_time .time span:nth-child(3n) {
+  background: #fff;
+  color: #000;
+}
+.view .hand_kill .kill_content {
+  text-align: center;
+  padding-top: 10px;
+}
+.view .hand_kill .kill_content ul li {
+  float: left;
+  width: 33.33333%;
+  position: relative;
+}
+.view .hand_kill .kill_content ul li a img {
+  width: 90%;
+  margin: 0 auto;
+}
+.view .hand_kill .kill_content ul li .hot_sell {
+  position: absolute;
+  width: 46px;
+  height: 28px;
+  background: #fdb60a;
+  line-height: 28px;
+  color: #fff;
+  top: 50%;
+  right: 20%;
+  border-radius: 50%;
+}
+.view .festival {
+  position: relative;
+}
+.view .festival .small_img {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+}
+.view .festival .small_img a {
+  float: left;
+  width: 50%;
+}
+.view .festival .small_img a img {
+  width: 95%;
+  margin: 0 auto;
+}
+.view .product_show a {
+  float: left;
+  width: 50%;
+}
+.view .product_show a:nth-child(-n+3) {
+  width: 33.3333%;
+}
+.view .adv {
+  padding: 5px;
+}
+.view .supermarket {
+  background: #fff;
+}
+.view .supermarket .market_title {
+  padding: 10px 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.view .supermarket .market_content a {
+  float: left;
+  width: 50%;
+}
+.view .supermarket .market_content a:nth-child(2) {
+  padding-bottom: 1px;
+}
+.view .theme {
+  background: #fff;
+}
+.view .theme .theme_title {
+  padding: 10px 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.view .theme .theme_content a {
+  float: left;
+  width: 25%;
+}
+.view .theme .theme_content a:nth-child(-n+2) {
+  width: 50%;
+}
+.view .theme .theme_content a:nth-child(2) {
+  padding-bottom: 1px;
+}
+.view .recom_brands {
+  background: #fff;
+}
+.view .recom_brands .recom_title {
+  padding: 10px 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.view .recom_brands .recom_content a {
+  float: left;
+}
+.view .recom_brands .recom_content a:first-child {
+  width: 40%;
+}
+.view .recom_brands .recom_content a:nth-last-child(-n+2) {
+  width: 30%;
+}
+.view .do_you_like {
+  background: #fff;
+}
+.view .do_you_like .like_title {
+  display: flex;
+  justify-content: space-between;
+}
+.view .do_you_like .like_title h4 {
+  padding: 0 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.view .do_you_like .like_title img {
+  display: inline;
+  vertical-align: middle;
+}
+.view .do_you_like .like_content li {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.view .do_you_like .like_content li .content_title {
+  display: flex;
+  justify-content: space-between;
+}
+.view .do_you_like .like_content li .content_title a {
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+.view .do_you_like .like_content li .content_pro img {
+  width: 80%;
+  margin: 0 auto;
+}
+.view .do_you_like .like_content li .content_pro p {
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.view footer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.view footer .more {
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.view footer .footer_bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.view footer .footer_bar a {
+  width: 25%;
+}
+.view footer .app {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.view footer .app a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.view footer .app a span:nth-child(1) {
+  width: 33px;
+  height: 33px;
+  background-image: url('../images/jd-sprites.png');
+  background-repeat: no-repeat;
+  background-position: -120px -70px;
+  background-size: 200px 200px;
+}
+.view footer .app a:nth-child(2) span:nth-child(1) {
+  background-position: -40px -70px;
+  background-size: 200px 200px;
+}
+.view footer .app a:nth-child(3) span:nth-child(1) {
+  background-position: -80px -70px;
+  background-size: 200px 200px;
+}
+.view footer .footer_copy {
+  padding: 15px 0;
+}
+.view nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+}
+.view nav a {
+  float: left;
+  width: 20%;
+  height: 50px;
+}
+.view nav a img {
+  width: 57px;
+  margin: 0 auto;
+}

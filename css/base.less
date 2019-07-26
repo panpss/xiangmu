@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input {
+    border: none; 
+    outline: none;
+}
+
+img {
+    /* 为了出去图片底部默认的3像素的间距 */
+    display: block;
+    // vertical-align: middle;
+    width: 100%;
+}
+
+.clearfix {
+    &::after {
+        display: block;
+        content: '.';
+        clear: both;
+        visibility: hidden;
+        height: 0;
+        line-height: 0;
+    }
+}
